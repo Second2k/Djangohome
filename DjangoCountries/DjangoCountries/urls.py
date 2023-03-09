@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from MainApp import views
 
+# TODO: вы не используете именованные url'ы
+# TODO: вы не используете наследование шаблонов
 urlpatterns = [
 	path('', views.home),
     path('country/<str:name>', views.get_country),
